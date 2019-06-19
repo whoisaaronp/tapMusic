@@ -1,0 +1,138 @@
+@charset"UTF-8";
+/*CSS Doc*/
+
+/* comments */
+
+.hidden
+{
+	display: none;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-shadow: border-box;
+}
+
+
+body
+{
+	font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.siteCon
+{
+	background: rgb(255,232,242);
+	background: linear-gradient(180deg, rgba(255,232,242,1) 0%, rgba(191,220,255,1) 100%);
+}
+
+.app
+{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.appTitle
+{
+	font-family: 'Alegreya Sans SC', sans-serif;
+	text-transform: uppercase;
+	font-size: 75px;
+	letter-spacing: 2px;
+}
+
+header
+{
+	margin: 50px 0px 30px 0px;
+	text-align: center;
+	font-size: 40px;
+}
+
+.subTitle
+{
+	margin-top: 10px;
+	font-family: 'Mr Dafoe', cursive;
+	font-size: 65px;
+}
+
+
+header p 
+{
+	font-size: 20px;
+}
+
+.pads
+{
+	display: flex;
+	width: 100%;
+	cursor: pointer;
+	background-color: lightblue;
+}
+
+/* Select ALL the pads in the div */
+.pads > div
+{
+	width: 100px;
+	height: 100px;
+	flex: 1;
+}
+
+.pad1
+{
+	background: #60d394;
+}
+
+.pad2
+{
+	background: #d36060;
+}
+
+.pad3
+{
+	background: #c063d3;
+}
+
+.pad4
+{
+	background: #d3d160;
+}
+
+.pad5
+{
+	background: #d36060;
+}
+
+.pad6
+{
+	background: #3826db;
+}
+
+@keyframes jump
+{
+	0%{
+		bottom: 0%;
+		left: 20%;
+	}
+	50%{
+		bottom: 50%;
+		left: 50%;
+	}
+	100%{
+		bottom: 0%;
+		left: 80%;
+	}
+}
+
+.visual > div
+{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	bottom: 0%;
+}
+
